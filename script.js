@@ -1,5 +1,6 @@
-setTimeout(() => {
-  const p = document.createElement("p");
-  p.innerText = "and it's dynamic, too!";
-  document.body.appendChild(p);
-}, 2000);
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
