@@ -153,7 +153,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -177,6 +176,7 @@ section {
 /* PROJECTS SECTION */
 
 #projects {
+  position: relative;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -185,7 +185,9 @@ section {
 }
 
 .project-container {
+  position: relative;
   display: flex;
+  justify-self: center;
   gap: 3rem;
   background: #415D43;
   margin-top: 2rem;
@@ -194,24 +196,18 @@ section {
   padding : 2rem;
   padding-left: 2rem;
   padding-right: 1rem;
-  max-width: 60rem;
+  max-width: 55rem;
   align-items: center;
-}
-
-.project-container-left {
-  display: flex;
-  flex-direction: column;
-  background: none;
 }
 
 /* EXPERIENCE SECTION */
 
 #experience {
+  position: relative;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  justify-content: start;
 }
 
 /* CONTACT */
