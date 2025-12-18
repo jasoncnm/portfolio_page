@@ -265,12 +265,10 @@ section {
 
 .section__text__p3 {
   color: #111D13;
-  text-align: center;
+  text-align: justify;
   font-size: medium;
   background: none;
 }
-
-
 
 .title {
   color: rgb(112, 151, 117);
