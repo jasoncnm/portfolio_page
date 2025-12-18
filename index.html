@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
@@ -13,8 +13,8 @@
       <div class="logo">Jason Mao</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -28,8 +28,8 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -57,23 +57,59 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/in/junjie-mao-a18552183'"
+            onclick="openLink('https://linkedin.com/in/junjie-mao-a18552183')"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/jasoncnm'"
+            onclick="openLink('https://github.com/jasoncnm')"
           />
         </div>
-          <div class="text-container">
-            <p>
-              I love video games
-            </p>
-          </div>
+        <p> I love video games and color green! </p>
       </div>
     </section>
-
+    <section id="projects">
+      <div class="section__text">
+        <h1 class="title">Projects</h1>
+      </div>
+      <div class="project-container">
+        <div class="section__project__text">
+          <p class="section__text__p2">Jason's 3rd Law</p>
+          <p class="section__text__p3">
+            2D sokoban like puzzle game made with raylib and c++.
+          </p>
+        </div>
+        <video class="clickable" onclick="openLink('https://github.com/jasoncnm/Jason-s_3rd_law')" controls muted autoplay loop>
+          <source src="./assets/jason_room_edit_0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-container">
+        <div class="section__project__text">
+          <p class="section__text__p2">Arena Shooter</p>
+          <p class="section__text__p3">
+            Top down arena shooter made with Unity
+          </p>
+        </div>
+        <video class="clickable" onclick="openLink('https://github.com/jasoncnm/splatoon50')" controls muted autoplay loop>
+          <source src="./assets/arena_shooter.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-container">
+        <div class="section__project__text">
+          <p class="section__text__p2">vulkan renderer</p>
+          <p class="section__text__p3">
+            Simple graphics renderer using Vulkan API.
+          </p>
+        </div>
+        <video class="clickable" onclick="openLink('https://github.com/jasoncnm/glfw-template')" controls muted autoplay loop>
+          <source src="./assets/vulkan_renderer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

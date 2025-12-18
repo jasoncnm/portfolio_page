@@ -54,7 +54,6 @@ a {
 
 a:hover {
   color: rgb(65, 93, 67);
-  text-underline-offset: 1rem;
 }
 
 .logo {
@@ -90,7 +89,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: rgb(161, 204, 165);
-  transition: all 0.3 ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +100,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .menu-links a {
@@ -111,7 +110,11 @@ a:hover {
   font-size: 1.5rem;
   color: rgb(161, 204, 165);
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.menu-links a:hover {
+  color : rgb(65, 93, 67)
 }
 
 .menu-links li {
@@ -164,14 +167,56 @@ section {
 
 #profile {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 5rem;
+  height: 50vh;
+}
+
+
+/* PROJECTS SECTION */
+
+#projects {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: start;
+  max-width: 60%;
+}
+
+.project-container {
+  display: flex;
+  gap: 3rem;
+  background: #415D43;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  padding : 2rem;
+  padding-left: 2rem;
+  padding-right: 0rem;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 70vh;
 }
 
 .section__pic-container {
-  width: 400px;
-  height: 400px;
+
   display: flex;
   margin: auto 0;
 }
@@ -183,21 +228,44 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  background: none;
+}
+
+.section__project__text {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  background: none;
 }
 
 .section__text p {
   font-weight: 600;
+  background: none;
 }
 
 .section__text__p1 {
   text-align: center;
   font-size: medium;
+  background: none;
 }
 
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  background: none;
 }
+
+.section__text__p3 {
+  color: #111D13;
+  text-align: center;
+  font-size: medium;
+  background: none;
+}
+
+
 
 .title {
   color: rgb(112, 151, 117);
@@ -218,6 +286,11 @@ section {
 .icon {
   cursor: pointer;
   height: 3rem;
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 /* BUTTONS */
@@ -275,23 +348,21 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
-}
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-}
-
-/* CONTACT */
-
-#contact {
-  display: flex;
+/* VIDEO */
+video {
   justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  border-radius: 1rem;
+  background: black;
+  max-width: 60%;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);;
+}
+
+.clickable:hover{
+  transform: scale(1.1);
 }
