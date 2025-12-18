@@ -182,7 +182,6 @@ section {
   flex-direction: column;
   justify-self: center;
   justify-content: start;
-  max-width: 60%;
 }
 
 .project-container {
