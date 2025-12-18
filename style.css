@@ -194,6 +194,8 @@ section {
   padding : 2rem;
   padding-left: 2rem;
   padding-right: 1rem;
+  max-width: 60rem;
+  align-items: center;
 }
 
 .project-container-left {
@@ -205,10 +207,11 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
-  position: relative;
+  margin-top: 5rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: start;
 }
 
 /* CONTACT */
