@@ -196,7 +196,7 @@ section {
   padding : 2rem;
   padding-left: 2rem;
   padding-right: 1rem;
-  max-width: 55rem;
+  max-width: 50rem;
   align-items: center;
 }
 
@@ -208,6 +208,18 @@ section {
   display: flex;
   flex-direction: column;
   justify-self: center;
+}
+
+.experience-pic-container {
+  display: flex;
+  border-radius: 2rem;
+  padding: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.experience-img {
+  background: none;
 }
 
 /* CONTACT */
@@ -265,7 +277,7 @@ section {
 
 .section__text__p3 {
   color: #111D13;
-  text-align: justify;
+  text-align: center;
   font-size: medium;
   background: none;
 }
