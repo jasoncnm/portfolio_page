@@ -227,8 +227,14 @@ section {
 #contact {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+}
+
+.email-containter {
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  gap: 1rem;
 }
 
 .section__pic-container {
@@ -269,6 +275,10 @@ section {
   background: none;
 }
 
+.text_style_1 {
+  color: #8ec291;
+}
+
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -302,11 +312,14 @@ section {
 .icon {
   cursor: pointer;
   height: 3rem;
-  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background: none;
 }
 
-.icon:hover {
+.icon_clickable {
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon_clickable:hover {
   transform: scale(1.2);
 }
 
