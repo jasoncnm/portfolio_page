@@ -250,7 +250,7 @@ section {
 .section__project__text {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   align-self: center;
   justify-content: center;
   text-align: center;
@@ -381,5 +381,5 @@ video {
 }
 
 .clickable:hover{
-  transform: scale(1.1);
+  transform: scale(1.05) translateX(-5px);
 }
