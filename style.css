@@ -223,6 +223,12 @@ section {
   overflow: hidden;
   display: flex;
   border-radius: 1rem;
+  max-width: 60%;
+  background: none;
+}
+
+.experience-img-2 {
+  justify-content: center;
   max-width: 100%;
   background: none;
 }
@@ -392,7 +398,7 @@ video {
   display: flex;
   border-radius: 1rem;
   background: black;
-  max-width: 100%;
+  max-width: 60%;
 }
 
 .clickable {
@@ -402,4 +408,8 @@ video {
 
 .clickable:hover{
   transform: scale(1.05) translateX(-5px);
+}
+
+.expandable {
+  margin: 1rem;
 }
