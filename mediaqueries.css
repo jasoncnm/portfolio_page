@@ -100,4 +100,12 @@
   .text-container {
     text-align: justify;
   }
+  #project,
+  .project-container {
+    display: grid;
+  }
+  .section__project__text {
+    justify-content: center;
+    width: auto;
+  }
 }

@@ -223,7 +223,7 @@ section {
   overflow: hidden;
   display: flex;
   border-radius: 1rem;
-  max-width: 60%;
+  max-width: 100%;
   background: none;
 }
 
@@ -392,7 +392,7 @@ video {
   display: flex;
   border-radius: 1rem;
   background: black;
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .clickable {
