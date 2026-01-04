@@ -193,9 +193,7 @@ section {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 2rem;
-  padding : 2rem;
-  padding-left: 2rem;
-  padding-right: 1rem;
+  padding : 1.5rem;
   max-width: 50rem;
   align-items: center;
 }
@@ -325,6 +323,7 @@ section {
   cursor: pointer;
   height: 3rem;
   background: none;
+  align-self: center;
 }
 
 .icon_clickable {
