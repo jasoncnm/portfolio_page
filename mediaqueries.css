@@ -112,4 +112,7 @@
   .experience-img {
     max-width: 100%;
   }
+  .clickable:hover{
+    transform: scale(1.05);
+  }
 }
