@@ -20,6 +20,7 @@ p {
   color: rgb(161, 204, 165);
 }
 
+
 /* TRANSITION */
 
 a,
@@ -193,9 +194,11 @@ section {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 2rem;
-  padding : 1.5rem;
-  max-width: 50rem;
+  padding: 1.5rem;
+  width: min(50rem, 100%);
+  min-height: 22rem;
   align-items: center;
+  box-sizing: border-box;
 }
 
 /* EXPERIENCE SECTION */
@@ -210,10 +213,11 @@ section {
 
 .experience-pic-container {
   display: flex;
+  flex: 1;
   border-radius: 2rem;
   padding: 3rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .experience-img {
@@ -264,9 +268,10 @@ section {
 
 .section__project__text {
   display: flex;
+  flex: 1;
   flex-direction: column;
   width: 40%;
-  align-self: center;
+  align-self: stretch;
   justify-content: center;
   text-align: center;
   background: none;
