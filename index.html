@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body>
+  <body id="top">
     <nav id="desktop-nav">
       <div class="logo">Jason Mao</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -28,8 +29,9 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -68,6 +70,63 @@
         </div>
         <p> I love making video games,</p>
         <p>and building things from scratch</p>
+      </div>
+    </section>
+    <section id="experience">
+      <div class="section__text">
+          <h1 class="title">Experience</h1>
+        <div class="project-container">
+          <div class="section__project__text">
+            <p class="section__text__p2">DataAnnotation</p>
+            <p class="section__text__p3">
+              Software Engineer | AI Trainer
+            </p>
+            <p class="section__text__p3">
+              June 2026 - Present
+            </p>
+            <p class="section__text__p1">
+              Prompt Engineering, RLHF, Python, C++
+            </p>
+            <div id="socials-container">
+              <img
+                src="./assets/internet.png"
+                alt="CinLearn website"
+                class="icon icon_clickable"
+                onclick="openLink('https://www.dataannotation.tech/')"
+              />
+            </div>
+        </div>
+        <div class="clickable experience-pic-container" 
+                onclick="openLink('https://www.dataannotation.tech/')">
+          <img src="./assets/DA.jpg" alt="DataAnnotation website" class="experience-img-2">
+        </div>
+        </div>
+                <div class="project-container">
+          <div class="section__project__text">
+            <p class="section__text__p2">CinLearn</p>
+            <p class="section__text__p3">
+              Software Engineer
+            </p>
+            <p class="section__text__p3">
+              Sept 2021 - June 2022
+            </p>
+            <p class="section__text__p1">
+              Html, Css, Vue.js, C#
+            </p>
+            <div id="socials-container">
+              <img
+                src="./assets/internet.png"
+                alt="CinLearn website"
+                class="icon icon_clickable"
+                onclick="openLink('https://www.cinlearn.com/')"
+              />
+            </div>
+        </div>
+        <div class="clickable experience-pic-container" 
+                onclick="openLink('https://www.cinlearn.com/')">
+          <img src="./assets/cinlearn.png" alt="CinLearn website" class="experience-img-2">
+        </div>
+        </div>
       </div>
     </section>
     <section id="projects">
@@ -158,61 +217,39 @@
         </div>
       </div>  
     </section>
-    <section id="experience">
+    <section id="education">
       <div class="section__text">
-          <h1 class="title">Experience</h1>
-        <div class="project-container">
-          <div class="section__project__text">
-            <p class="section__text__p2">DataAnnotation</p>
-            <p class="section__text__p3">
-              Software Engineer | AI Trainer
-            </p>
-            <p class="section__text__p3">
-              June 2026 - Present
-            </p>
-            <p class="section__text__p1">
-              Prompt Engineering, RLHF, Python, C++
-            </p>
-            <div id="socials-container">
-              <img
-                src="./assets/internet.png"
-                alt="CinLearn website"
-                class="icon icon_clickable"
-                onclick="openLink('https://www.dataannotation.tech/')"
-              />
-            </div>
+          <h1 class="title">Education</h1>
+          <div class="project-container">
+            <div class="section__project__text">
+              <p class="section__text__p2">University of Waterloo</p>
+              <p class="section__text__p3">
+                Honours Bachelor of Computer Science
+              </p>
+              <p class="section__text__p3">
+                Sept 2020 - Sept 2024
+              </p>
+              <div id="socials-container">
+                <img
+                  src="./assets/internet.png"
+                  alt="University of Waterloo website"
+                  class="icon icon_clickable"
+                  onclick="openLink('https://uwaterloo.ca/')"
+                />
+                <img
+                  src="./assets/transcript_icon.png"
+                  alt="University of Waterloo transcript"
+                  class="icon icon_clickable"
+                  onclick="window.open('./assets/transcript.pdf')"
+                />
+              </div>
+          </div>
+          <div class="clickable experience-pic-container" 
+                  onclick="openLink('https://uwaterloo.ca/')">
+            <img src="./assets/waterloo.png" alt="University of Waterloo website" class="experience-img-2">
+          </div>
         </div>
-        <div class="clickable experience-pic-container" 
-                onclick="openLink('https://www.dataannotation.tech/')">
-          <img src="./assets/DA.jpg" alt="DataAnnotation website" class="experience-img-2">
-        </div>
-        </div>
-                <div class="project-container">
-          <div class="section__project__text">
-            <p class="section__text__p2">CinLearn</p>
-            <p class="section__text__p3">
-              Software Engineer
-            </p>
-            <p class="section__text__p3">
-              Sept 2021 - June 2022
-            </p>
-            <p class="section__text__p1">
-              Html, Css, Vue.js, C#
-            </p>
-            <div id="socials-container">
-              <img
-                src="./assets/internet.png"
-                alt="CinLearn website"
-                class="icon icon_clickable"
-                onclick="openLink('https://www.cinlearn.com/')"
-              />
-            </div>
-        </div>
-        <div class="clickable experience-pic-container" 
-                onclick="openLink('https://www.cinlearn.com/')">
-          <img src="./assets/cinlearn.png" alt="CinLearn website" class="experience-img-2">
-        </div>
-        </div>
+
       </div>
     </section>
     <section id="contact">
@@ -222,6 +259,9 @@
         <p class="section__text"><a href="mailto:jason080200114@gmail.com">jason080200114@gmail.com</a></p>
       </div>
     </section>
+    <a class="side-button" href="#top" aria-label="Return to top of page">
+      <img src="./assets/arrow.png" alt="" class="side-button-icon" />
+    </a>
     <script src="script.js"></script>
   </body>
 </html>

@@ -417,3 +417,35 @@ video {
 .expandable {
   margin: 1rem;
 }
+
+/* SIDE BUTTON */
+
+.side-button {
+  position: fixed;
+  bottom: 10%;
+  right: 6%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 1px solid rgb(161, 204, 165);
+  border-radius: 50%;
+  background-color: rgb(65, 93, 67);
+  color: rgb(161, 204, 165);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.side-button:hover {
+  background-color: rgb(161, 204, 165);
+  color: rgb(17, 29, 19);
+}
+
+.side-button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: none;
+}
